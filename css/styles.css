@@ -1,0 +1,300 @@
+/* Default, desktop */
+html, body{
+    height: 100%;
+    margin: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav#main-nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+}
+
+nav#main-nav ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav#main-nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav#main-nav ul li a{
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    display: block;
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    padding: 5px 0px;
+    -webkit-transition: color 0.6s;
+    -moz-transition: color 0.6s;
+    -o-transition: color 0.6s;
+    -ms-transition: color 0.6s;
+    transition: color 0.6s;
+}
+
+nav#main-nav ul li a:hover{
+    color: rgb(192, 192, 192);
+}
+
+section{
+    width: 100%;
+    height: 135%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home{
+    background-image: url(../img/home-background.jpg);
+}
+
+#main-title{
+    width: 50%;
+    margin-top: 22%;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center; 
+    letter-spacing: 15px;
+}
+
+.title{
+    width: 100%;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-top: 6%;
+    font-size: 50px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.subtitle{
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 24px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about{
+    background-image: url(../img/about-background.jpg);
+}
+
+#about-picture{
+    width: 270px;
+    height: 270px;
+    margin-top: 2%;
+    background-image: url(../img/picture-of-myself.jpg);
+    background-size: cover;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 50%;
+}
+
+#about-subtitle{
+    width: 50%;
+    margin-top: 3%;
+}
+
+#about-text{
+    width: 65%;
+    margin-top: 4%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.more-info{
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.more-info a{
+    width: 240px;
+    font-weight: 400;
+    display: block;
+    color: black;
+    padding: 7px 0px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 30px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.more-info a:hover{
+    background-color: rgb(168, 168, 168);
+}
+
+#experience{
+    background-image: url(../img/experience-background.jpg);
+    height: 195%;
+}
+
+#experience-content-wrapper{
+    position: relative;
+    width: 80%;
+    height: 860px;
+    top: 120px;
+}
+
+#experience-timeline-wrapper{
+    height: 585px;
+    width: 15px;
+}
+
+.circle{
+    position: relative;
+    top: -100%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+}
+
+/* Applies bottom margin space to all circles but last one, creating a space between them. */
+.circle:not(:last-child){
+    margin-bottom: 270px;
+}
+
+.vertical-line{
+    width: 4px;
+    height: 100%;
+    background-color: rgb(146, 146, 146);   
+}
+
+.experience-content{
+    font-family: 'Poppins', Arial, sans-serif;
+    position: relative;
+    top: -68.5%;
+    width: 46%;
+    height: 285px;
+}
+
+.left{
+    text-align: right;
+}
+
+.right{
+    left: 54%;
+    text-align: left;
+}
+
+.experience-date{
+    display: block;
+    font-size: 105%;
+    font-weight: 700;
+}
+
+.job-title{
+    display: block;
+    padding: 20px 0px;
+    font-size: 120%;
+    color: rgb(206, 207, 212);
+    font-weight: 600;
+}
+
+.experience-details{
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    font-size: 102%;
+}
+
+#skills{
+    background-image: url(../img/skills-background.jpg);
+    height: 160%;
+}
+
+#skills-subtitle{
+    width: 60%;
+    margin-top: 30px;
+}
+
+#projects{
+    background-image: url(../img/projects-background.jpg);
+    height: 100%;
+}
+
+#projects-subtitle{
+    width: 50%;
+    margin-top: 2%;
+}
+
+#download{
+    background-image: url(../img/download-background.jpg);
+}
+
+#download-title{
+    width: 60%;
+}
+
+#contact{
+    background-image: url(../img/contact-background.jpg);
+    height: 105%;
+}
+
+footer{
+    width: 100%;
+    height: 12%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+footer span{
+    position: relative;
+    display: block;
+    font-size: 15px;
+    top: 33%;
+    color: black;
+}
+
+/*
+    @media mediatype and (expressions){
+        css...
+    }
+
+    mediatype - all, screen, print, speech
+
+    expressions :
+                    min-width
+                    max-width
+*/
+
+/* smaller screens
+@media screen and (max-width){
+
+} */
+
+
+
+/* smartphone screens 
+@media screen and (max-width){
+
+}*/
+/* TODO: menu sandwich */
