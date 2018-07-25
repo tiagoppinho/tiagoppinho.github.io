@@ -9,10 +9,22 @@ $(function(){
     });
 })
 
-//Shows the side navigation bar or hides it, depending on the scroll position.
+//Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= $("#about").offset().top - 5) 
+    if ($(window).scrollTop() >= $("#about").offset().top - 5){
         $("#side-nav").css("visibility", "visible");
-    else
+        var windowTopPosition = $(window).scrollTop();
+        $("#side-nav ul li a").not("first").each(function(){
+            var section = $($(this).attr("href"));
+            var sectionTop = section.offset().top;
+            var sectionBottom = section.offset().top + section.height();
+            if(sectionTop <= windowTopPosition && sectionBottom >= windowTopPosition){
+                $(this).addClass("active");
+            } else{
+                $(this).removeClass("active");
+            }
+        });
+    } else {
         $("#side-nav").css("visibility", "hidden");
+    }
 });
