@@ -258,6 +258,7 @@ section{
 .job-date{
     font-size: 105%;
     font-weight: 700;
+    padding: 0;
 }
 
 .job-title{
