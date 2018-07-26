@@ -249,26 +249,30 @@ section{
     text-align: left;
 }
 
-.experience-date{
+.experience-details{
     display: block;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.job-date{
     font-size: 105%;
     font-weight: 700;
 }
 
 .job-title{
-    display: block;
-    padding: 20px 0px;
     font-size: 120%;
     color: rgb(206, 207, 212);
+    font-weight: 700;
+}
+
+.job-location{
+    color: rgb(212, 213, 219);
     font-weight: 600;
 }
 
-.experience-details{
+.job-description{
     font-family: 'Open Sans', Tahoma, sans-serif;
-    width: 100%;
-    position: relative;
-    top: 5px;
-    font-size: 102%;
 }
 
 #skills{
