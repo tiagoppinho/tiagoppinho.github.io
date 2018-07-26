@@ -80,11 +80,11 @@ a{
 }
 
 #side-nav ul li a.active span{
-    -webkit-animation: fadeout 2s linear 0.1s;
-    -moz-animation: fadeout 2s linear 0.1s;
-    -o-animation: fadeout 2s linear 0.1s;
-    -ms-animation: fadeout 2s linear 0.1s;
-    animation: fadeout 2s linear 0.1s;
+    -webkit-animation: fadeout 1s linear 0.1s;
+    -moz-animation: fadeout 1s linear 0.1s;
+    -o-animation: fadeout 1s linear 0.1s;
+    -ms-animation: fadeout 1s linear 0.1s;
+    animation: fadeout 1s linear 0.1s;
 }
 
 #side-nav ul li a span{
