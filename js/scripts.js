@@ -16,7 +16,7 @@ $(window).scroll(function(){
         var windowTopPosition = $(window).scrollTop();
         $("#side-nav ul li a").not("first").each(function(){
             var section = $($(this).attr("href"));
-            var sectionTop = section.offset().top - 5;
+            var sectionTop = section.offset().top - 20;
             var sectionBottom = section.offset().top + section.height();
             if(sectionTop <= windowTopPosition && sectionBottom >= windowTopPosition){
                 //Removes any active anchor before setting up the new one.

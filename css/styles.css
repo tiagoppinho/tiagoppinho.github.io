@@ -79,13 +79,16 @@ a{
     border-left: 2px solid rgba(255, 255, 255, 1);
 }
 
+#side-nav ul li a.active span{
+    -webkit-animation: fadeout 2s linear 0.1s;
+    -moz-animation: fadeout 2s linear 0.1s;
+    -o-animation: fadeout 2s linear 0.1s;
+    -ms-animation: fadeout 2s linear 0.1s;
+    animation: fadeout 2s linear 0.1s;
+}
+
 #side-nav ul li a span{
     opacity: 0;
-    -webkit-transition: opacity 0.4s;
-    -moz-transition: opacity 0.4s;
-    -o-transition: opacity 0.4s;
-    -ms-transition: opacity 0.4s;
-    transition: opacity 0.4s;
 }
 
 #side-nav ul li a:hover span{
@@ -280,7 +283,7 @@ section{
 
 #projects{
     background-image: url(../img/projects-background.jpg);
-    height: 100%;
+    height: 110%;
 }
 
 #projects-subtitle{
