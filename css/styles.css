@@ -359,6 +359,19 @@ section{
     height: 4px;
     background-color: white;
     border: none;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#quote-wrapper{
+    width: 55%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 150%;
+}
+
+#quote{
+    margin-bottom: 10%;
 }
 
 #contact{
