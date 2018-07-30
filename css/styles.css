@@ -298,10 +298,67 @@ section{
 
 #download{
     background-image: url(../img/download-background.jpg);
+    height: 200%;
 }
 
 #download-title{
     width: 60%;
+}
+
+#download-picture{
+    background-image: url(../img/cv.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 500px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#download-buttons{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+#download-buttons a{
+    font-family: 'Poppins', Arial, sans-serif;
+    display: block;
+    text-align: center;
+    width: 230px;
+    background-color: rgb(24, 57, 129);
+    color: white;
+    padding: 7px 0px;   
+    border-radius: 30px;
+    position: relative;
+    top: 35%;
+    left: 22%;
+    -webkit-transition: background-color 0.6s;
+    -moz-transition: background-color 0.6s;
+    -o-transition: background-color 0.6s;
+    -ms-transition: background-color 0.6s;
+    transition: background-color 0.6s;
+}
+
+#download-buttons a:not(:last-child){
+    margin-bottom: 25%;
+}
+
+#download-buttons a:hover{
+    background-color: rgb(33, 52, 70);
+}
+
+#download-picture:hover #download-buttons{
+    opacity: 1;
+}
+
+.separator{
+    width: 55%;
+    height: 4px;
+    background-color: white;
+    border: none;
 }
 
 #contact{
