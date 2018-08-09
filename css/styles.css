@@ -11,6 +11,10 @@ a{
     text-decoration: none;
 }
 
+textarea{
+    resize: none;
+}
+
 #main-nav{
     width: 100%;
     background-color: transparent;
@@ -144,6 +148,7 @@ section{
 
 #about{
     background-image: url(../img/about-background.jpg);
+    height: 140%;
 }
 
 #about-picture{
@@ -376,7 +381,50 @@ section{
 
 #contact{
     background-image: url(../img/contact-background.jpg);
-    height: 105%;
+    height: 110%;
+}
+
+#form-wrapper{
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+input, textarea{
+    display: block;
+    width: 95%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+input{
+    height: 25px;
+    padding: 10px;
+}
+
+textarea{
+    height: 170px;
+    padding: 12px 10px;
+}
+
+input[type=submit]{
+    width: 150px;
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
 }
 
 footer{
@@ -408,14 +456,14 @@ footer span{
 */
 
 /* smaller screens
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 1015px){
 
 } */
 
 
 
 /* smartphone screens 
-@media screen and (max-width){
+@media screen and (max-width: 640px){
 
 }*/
 /* TODO: menu sandwich */
