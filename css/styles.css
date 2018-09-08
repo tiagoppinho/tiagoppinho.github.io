@@ -311,21 +311,26 @@ section{
 }
 
 #download-picture{
+    margin-top: 60px;
     background-image: url(../img/cv.png);
     background-size: cover;
     background-position: center;
     width: 400px;
     height: 500px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    border-radius: 10px;
 }
 
 #download-buttons{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
     transition: 0.5s ease;
     opacity: 0;
+    border-radius: 10px;
 }
 
 #download-buttons a{
