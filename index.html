@@ -214,13 +214,16 @@
     <section id="contact">
         <div class="title">LET'S TALK!</div>
         <div id="form-wrapper" class="centered">
-            <form method="POST" action="https://formspree.io/tiagoppinho@gmail.com" class="centered">
+            <form id="contact-form" method="POST" action="https://formspree.io/tiagoppinho@gmail.com" class="centered" novalidate>
                 <input type="text" name="name" placeholder="Your Name *">
                 <input type="email" name="email" placeholder="Your Email *">
-                <input type="text" name="subject" placeholder="Subject" autocomplete="off">
-                <textarea placeholder="Message" name="message"></textarea>
+                <input type="text" name="subject" placeholder="Subject *" autocomplete="off">
+                <textarea name="message" placeholder="Message *"></textarea>
                 <input type="hidden" name="_next" value="#contact">
-                <input type="submit" value="Send">
+                <input type="submit" value="SEND">
+                <div id="form-errors">
+                    <span></span>
+                </div>
             </form>
         </div>
     </section>
