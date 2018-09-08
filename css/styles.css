@@ -385,7 +385,7 @@ section{
 }
 
 #form-wrapper{
-    width: 60%;
+    width: 55%;
     height: 60%;
     padding: 20px;
     margin-top: 20px;
@@ -397,12 +397,11 @@ input, textarea{
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    
     background-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', Courier, monospace;
     font-size: 16px;
 }
 
@@ -423,8 +422,26 @@ input[type=submit]{
     top: -40px;
     height: 60px;
     background-color: white;
-    color: black;
+    color: rgb(66, 62, 62);
     font-size: 17px;
+}
+
+#form-errors{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-top: -30px;
+    text-align: center;
+    display: none;
+}
+
+#form-errors span{
+    color: rgb(252, 76, 76);
+    font-weight: bold;
+}
+
+.error{
+    border-color: red;
 }
 
 footer{
