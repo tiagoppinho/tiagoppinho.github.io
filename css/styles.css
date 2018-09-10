@@ -260,6 +260,12 @@ section{
     padding: 5px 0px;
 }
 
+.experience-details ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+}
+
 .job-date{
     font-size: 105%;
     font-weight: 700;
