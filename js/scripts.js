@@ -7,6 +7,61 @@ $(function(){
             scrollTop: $($(this).attr("href")).offset().top
         }, 1200);
     });
+
+    //Contact form validation.
+    $("form#contact-form").submit(function(e){
+        //Get all input fields except hidden or submit.
+        var inputFields = $("form#contact-form :input").not("[type=hidden], [type=submit]");
+        var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var error = false;
+        var errorType; // 0 - Empty fields, 1 - Invalid email.
+
+        //Loop through each input field, apply validation and event listeners.
+        inputFields.each(function(){
+            var field = $(this);
+            var fieldValue = field.val().trim();
+
+            //Validate
+            if (!fieldValue) {
+                if(!error)
+                    error = true;
+
+                errorType = 0;
+                $("#form-errors span").text("All fields are required!");
+                field.addClass("error");
+            } else if (field.attr("type") == "email" && !emailRegex.test(fieldValue)) {
+                if (!error)
+                    error = true;
+
+                errorType = 1;
+                $("#form-errors span").text("Please enter a valid email!");
+                field.addClass("error");
+            }
+
+            $(field).on("change paste keyup", function(){
+                var fieldValue = $(this).val().trim();
+
+                if(errorType == 0 && fieldValue){
+                    $(this).removeClass("error");
+                    
+                    if($(".error").length == 0)
+                        $("#form-errors").fadeOut();
+                        
+                } else if(errorType == 1 && emailRegex.test(fieldValue)){
+                    $(this).removeClass("error");
+                } else{
+                    $(this).addClass("error");
+                }
+            });
+
+        });
+
+        if (error){
+            e.preventDefault();
+            $("#form-errors").fadeIn();
+        }
+
+    });
 })
 
 //Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.
