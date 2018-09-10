@@ -38,17 +38,21 @@ $(function () {
                 field.addClass("error");
             }
 
+            //Add event listeners.
             $(field).on("change paste keyup", function () {
                 var fieldValue = $(this).val().trim();
 
                 if (errorType == 0 && fieldValue) {
                     $(this).removeClass("error");
 
-                    if ($(".error").length == 0)
+                    if ($(".error").length == 0) {
                         $("#form-errors").fadeOut();
+                        error = false;
+                    }
 
                 } else if (errorType == 1 && emailRegex.test(fieldValue)) {
                     $(this).removeClass("error");
+                    error = false;
                 } else {
                     $(this).addClass("error");
                 }
@@ -56,9 +60,19 @@ $(function () {
 
         });
 
+        //Prevent default action in case of error.
+        //Reset otherwise.
         if (error) {
             e.preventDefault();
             $("#form-errors").fadeIn();
+        } else {
+            $(".error").each(function () {
+                $(this).removeClass("error");
+            });
+
+            inputFields.each(function () {
+                $(this).off("change paste keyup");
+            });
         }
 
     });
@@ -68,7 +82,7 @@ $(function () {
 $(window).scroll(function () {
     if ($(window).scrollTop() >= $("#about").offset().top - 5) {
         var windowTopPosition = $(window).scrollTop();
-        
+
         $("#side-nav").css("visibility", "visible");
         $("#side-nav ul li a").not("first").each(function () {
             var section = $($(this).attr("href"));
