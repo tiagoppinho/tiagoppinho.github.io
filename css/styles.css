@@ -435,6 +435,16 @@ input[type=submit]{
     background-color: white;
     color: rgb(66, 62, 62);
     font-size: 17px;
+    border: none;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(150, 146, 146);
 }
 
 #form-errors{
