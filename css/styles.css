@@ -1,6 +1,6 @@
 /* Default, desktop */
 html, body{
-    height: 100%;
+    min-width: 100%;
     margin: 0px;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 400;
@@ -101,7 +101,6 @@ textarea{
 
 section{
     width: 100%;
-    height: 135%;
     overflow: hidden;
     background-attachment: fixed;
     background-position: center;
@@ -121,6 +120,7 @@ section{
     font-weight: 800;
     text-align: center; 
     letter-spacing: 15px;
+    margin-bottom: 25%;
 }
 
 .title{
@@ -177,6 +177,7 @@ section{
     width: 100%;
     text-align: center;
     margin-top: 45px;
+    margin-bottom: 9%;
 }
 
 .more-info a{
@@ -209,6 +210,7 @@ section{
     width: 70%;
     height: 860px;
     top: 120px;
+    margin-bottom: 20%;
 }
 
 #experience-timeline-wrapper{
@@ -311,6 +313,7 @@ section{
     width: 1050px;
     margin-top: 5%;
     height: 345px;
+    margin-bottom: 15%;
 }
 
 .project-card{
@@ -503,6 +506,7 @@ section{
     margin-top: 5%;
     text-align: center;
     font-size: 150%;
+    margin-bottom: 14%;
 }
 
 #quote{
@@ -519,6 +523,7 @@ section{
     height: 60%;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 5%;
 }
 
 input, textarea{
@@ -590,6 +595,7 @@ footer{
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: white;
     text-align: center;
+    padding: 2% 0;
 }
 
 footer span{
