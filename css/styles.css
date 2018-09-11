@@ -299,12 +299,131 @@ section{
 
 #projects{
     background-image: url(../img/projects-background.jpg);
-    height: 110%;
+    height: 120%;
 }
 
 #projects-subtitle{
     width: 50%;
     margin-top: 2%;
+}
+
+#projects-wrapper{
+    width: 1050px;
+    margin-top: 5%;
+    height: 345px;
+}
+
+.project-card{
+    height: 345px;
+    width: 500px;
+    float: left;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 0 12.5px;
+    filter: brightness(90%);
+}
+
+.project-card:first-child{
+    background-image: url(../img/website-project-cover.png);
+}
+
+.project-card:last-child{
+    background-image: url(../img/password-manager-project-cover.png);
+}
+
+.project-details{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+}
+
+.project-skills{
+    position: relative;
+    display: block;
+    width: calc(100% - 15px);
+    height: 23px;
+    border-radius: 10px;
+    margin-left: 15px;
+    top: 13px;
+    font-size: 8pt;
+    font-weight: 700;
+}
+
+.project-skills .skill{
+    position: relative;
+    float: left;
+    height: 20px;
+    width: 55px;
+    border-radius: 10px;
+    padding-top: 3px;
+    margin-right: 10px;
+}
+
+.project-skills .skill.html{ background-color: rgba(227, 76, 38, 0.7); }
+
+.project-skills .skill.css{ background-color: rgba(86, 61, 124, 0.7); }
+
+.project-skills .skill.js{ background-color: rgba(248, 229, 80, 0.7); }
+
+.project-skills .skill.jquery{ background-color: rgba(106, 107, 26, 0.7); }
+
+.project-skills .skill.java{ background-color: rgba(176, 114, 25, 0.7); }
+
+.project-skills .skill.sql{ background-color: rgba(2, 27, 141, 0.7); }
+
+.project-skills .skill.sqlite{ background-color: rgba(11, 88, 15, 0.7); }
+
+.project-details .project-title{
+    display: block;
+    font-size: 23pt;
+    margin-top: 13%;
+    margin-bottom: 5%;
+    letter-spacing: 2px;
+}
+
+.project-details .project-description{
+    display: block;
+    width: 85%;
+    height: 90px;
+    font-size: 12pt;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.project-details .project-buttons{
+    color: white;
+    display: block;
+    width: 180px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: rgba(18, 51, 122, 0.8);
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+.project-details .project-buttons:hover{
+    background-color: rgb(33, 52, 70);
+}
+
+.project-card:hover .project-details{
+    opacity: 1;
 }
 
 #download{
@@ -330,11 +449,11 @@ section{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
     opacity: 0;
     border-radius: 10px;
 }
