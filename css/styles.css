@@ -148,7 +148,6 @@ section{
 
 #about{
     background-image: url(../img/about-background.jpg);
-    height: 140%;
 }
 
 #about-picture{
@@ -202,7 +201,6 @@ section{
 
 #experience{
     background-image: url(../img/experience-background.jpg);
-    height: 195%;
 }
 
 #experience-content-wrapper{
@@ -236,7 +234,7 @@ section{
 .vertical-line{
     width: 4px;
     height: 100%;
-    background-color: rgb(146, 146, 146);   
+    background-color: rgb(146, 146, 146);
 }
 
 .experience-content{
@@ -291,7 +289,6 @@ section{
 
 #skills{
     background-image: url(../img/skills-background.jpg);
-    height: 160%;
 }
 
 #skills-subtitle{
@@ -299,9 +296,84 @@ section{
     margin-top: 30px;
 }
 
+#skills-content-wrapper{
+    height: 650px;
+    width: 70%;
+    margin-top: 6%;
+    margin-left: 18%;
+    margin-bottom: 12%;
+}
+
+.skill-content{
+    display: block;
+    height: 30px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+    font-size: 14pt;
+}
+
+.skill-content .skill-title, .skill-content .skill-value{
+    display: block;
+}
+
+.skill-content .skill-title{
+    width: 162px;
+    text-align: right;
+    float: left;
+    margin-top: -2.5px;
+}
+
+.skill-content .skill-value{
+    width: 38px;
+    margin-top: -19.5px;
+}
+
+.skill-content .skill-line-wrapper, .skill-content .skill-line-wrapper .skill-line{
+    border-radius: 10px;
+}
+
+.skill-content .skill-line-wrapper{
+    height: 10px;
+    width: 70%;
+    margin-top: 7.5px;
+    margin-left: 168px;
+}
+
+.skill-content .skill-line-wrapper .skill-line{
+    background-color: rgb(24, 57, 129);
+    height: 100%;
+}
+
+.skill-content.sixty .skill-line-wrapper .skill-line{ width: 60%; }
+
+.skill-content.sixty-five .skill-line-wrapper .skill-line{ width: 65%; }
+
+.skill-content.seventy .skill-line-wrapper .skill-line{ width: 70%; }
+
+.skill-content.eighty .skill-line-wrapper .skill-line{ width: 80%; }
+
+.skill-content.eighty-five .skill-line-wrapper .skill-line{ width: 85%; }
+
+.skill-content.ninety .skill-line-wrapper .skill-line{ width: 90%; }
+
+.skill-content.ninety-five .skill-line-wrapper .skill-line{ width: 95%; }
+
+.skill-content.sixty .skill-value{ margin-left: 60.5%; }
+
+.skill-content.sixty-five .skill-value{ margin-left: 64%; }
+
+.skill-content.seventy .skill-value{ margin-left: 67.5% }
+
+.skill-content.eighty .skill-value{ margin-left: 74.5%; }
+
+.skill-content.eighty-five .skill-value{ margin-left: 78% }
+
+.skill-content.ninety .skill-value{ margin-left: 81.5%; }
+
+.skill-content.ninety-five .skill-value{ margin-left: 85%; }
+
 #projects{
     background-image: url(../img/projects-background.jpg);
-    height: 120%;
 }
 
 #projects-subtitle{
@@ -431,7 +503,6 @@ section{
 
 #download{
     background-image: url(../img/download-background.jpg);
-    height: 200%;
 }
 
 #download-title{
@@ -515,7 +586,6 @@ section{
 
 #contact{
     background-image: url(../img/contact-background.jpg);
-    height: 110%;
 }
 
 #form-wrapper{
@@ -591,7 +661,6 @@ input[type=submit]:hover{
 
 footer{
     width: 100%;
-    height: 12%;
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: white;
     text-align: center;
