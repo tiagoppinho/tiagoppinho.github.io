@@ -81,7 +81,7 @@ $(function () {
 //Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.
 $(window).scroll(function () {
     if ($(window).scrollTop() >= $("#about").offset().top - 5) {
-        var windowTopPosition = $(window).scrollTop();
+        var windowMiddlePosition = $(window).scrollTop() + ($(window).height() / 2);
 
         $("#side-nav").css("visibility", "visible");
         $("#side-nav ul li a").not("first").each(function () {
@@ -89,7 +89,7 @@ $(window).scroll(function () {
             var sectionTop = section.offset().top - 20;
             var sectionBottom = section.offset().top + section.height();
 
-            if (sectionTop <= windowTopPosition && sectionBottom >= windowTopPosition) {
+            if (sectionTop <= windowMiddlePosition && sectionBottom >= windowMiddlePosition) {
                 //Removes any active anchor before setting up the new one.
                 $("#side-nav ul li a.active").removeClass("active");
                 $(this).addClass("active");
