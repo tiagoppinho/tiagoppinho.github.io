@@ -7,6 +7,10 @@ html, body{
     color: white;
 }
 
+*:focus{
+    outline: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -218,7 +222,6 @@ section{
 
 .circle{
     position: relative;
-    top: -100%;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -233,8 +236,9 @@ section{
 
 .vertical-line{
     width: 4px;
-    height: 100%;
+    height: 0%;
     background-color: rgb(146, 146, 146);
+    margin-top: -855px;
 }
 
 .experience-content{
