@@ -98,4 +98,37 @@ $(window).scroll(function () {
     } else {
         $("#side-nav").css("visibility", "hidden");
     }
+
+    //Animations on-scroll.
+    //Happens only on desktop.
+    if(!window.matchMedia('(max-width: 700px)').matches){
+
+        if (isInView($("#experience-timeline-wrapper"))) {
+            $(".vertical-line").delay(350).animate({ height: '100%' }, 1500, "linear");
+        }
+
+        $(".experience-content").each(function(){
+            if(isInView($(this))) {
+                $(this).delay(350).animate({ opacity : '1'}, 1200, "linear");
+            }
+        });
+
+        var i = 0;
+
+        $(".skill-line").each(function () {
+            if (isInView($(this))) {
+                var valueElement = $(".skill-value").get(i);
+                var value = valueElement.innerHTML;
+                var animationObject = { width: value };
+                $(this).delay(200).animate(animationObject, 1000, "linear");
+                $(valueElement).delay(1100).animate({ opacity : '1'}, 600, "linear");
+            }
+            i++;
+        });
+    }
 });
+
+//Checks if element is in view based on it's top compared with window's bottom.
+function isInView(element){
+    return element.offset().top <= ($(window).scrollTop() + $(window).height());
+}
