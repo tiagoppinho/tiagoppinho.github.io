@@ -76,6 +76,11 @@ $(function () {
         }
 
     });
+
+    $("#menu-icon").click(function () {
+        $(this).toggleClass("active-menu-icon");
+        $("#main-nav").toggleClass("active");
+    });
 })
 
 //Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.

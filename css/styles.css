@@ -53,6 +53,55 @@ textarea{
     color: rgb(192, 192, 192);
 }
 
+#menu-icon{
+    position: fixed;
+    display: none;
+    width: 35px;
+    margin-top: 8%;
+    margin-left: 90%;
+    z-index: 15;
+    cursor: pointer;
+}
+
+#menu-icon .menu-icon-bar{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#menu-icon .menu-icon-bar:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.active-menu-icon #main-nav{
+    opacity: 1;
+}
+
+.active-menu-icon .menu-icon-bar:first-child{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    -moz-transform: rotate(-45deg) translate(-9px, 6px);
+    -o-transform :rotate(-45deg) translate(-9px, 6px);
+    -ms-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.active-menu-icon .menu-icon-bar:nth-child(2){
+    opacity: 0;
+}
+
+.active-menu-icon .menu-icon-bar:last-child{
+    -webkit-transform: rotate(45deg) translate(-9px, -4px);
+    -moz-transform: rotate(45deg) translate(-9px, -4px);
+    -o-transform :rotate(45deg) translate(-9px, -4px);
+    -ms-transform: rotate(45deg) translate(-9px, -4px);
+    transform: rotate(45deg) translate(-9px, -4px);
+}
+
 #side-nav{
     position: fixed;
     z-index: 10;
@@ -752,6 +801,40 @@ footer span{
     }
 }
 
+@media screen and (max-width: 720px){
+    #main-nav{
+        position: fixed;
+        z-index: 10;
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        height: 100%;
+    }
+
+    #main-nav ul{
+        margin-top: 25%;
+    }
+
+    #main-nav.active, #menu-icon, #main-nav ul li{
+        display: block;
+    }
+
+    #main-nav ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+    #main-nav ul li a{
+        display: block;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main-title{
+        margin-top: calc(30% + 25px);
+    }
+}
+
 @media screen and (max-width: 700px){
     #more-info{
         font-size: 15px;
@@ -970,11 +1053,23 @@ footer span{
 }
 
 @media screen and (max-width: 480px){
+    #main-nav ul li{
+        font-size: 11pt;
+    }
+
+    #menu-icon{
+        margin-left: 85%;
+    }
+
+    #main-nav ul{
+        margin-top: 40%;
+    }
+    
     #main-title{
         font-size: 45px;
         margin-left: 5px;
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 60%;
+        margin-bottom: 60%;
         letter-spacing: 10px;
     }
 
@@ -1054,6 +1149,10 @@ footer span{
 @media screen and (max-width: 400px){
     .subtitle{
         font-size: 18px;
+    }
+
+    #menu-icon{
+        margin-left: 83%;
     }
     
     #experience-content-wrapper{
