@@ -101,15 +101,15 @@ $(window).scroll(function () {
 
     //Animations on-scroll.
     //Doesn't apply on smartphones/small tablets.
-    if(!window.matchMedia('(max-width: 700px)').matches){
+    if (!window.matchMedia('(max-width: 700px)').matches) {
 
         if (isInView($("#experience-timeline-wrapper"))) {
             $(".vertical-line").delay(350).animate({ height: '100%' }, 1500, "linear");
         }
 
-        $(".experience-content").each(function(){
-            if(isInView($(this))) {
-                $(this).delay(350).animate({ opacity : '1'}, 1200, "linear");
+        $(".experience-content").each(function () {
+            if (isInView($(this))) {
+                $(this).delay(350).animate({ opacity: '1' }, 1200, "linear");
             }
         });
 
@@ -121,7 +121,7 @@ $(window).scroll(function () {
                 var value = valueElement.innerHTML;
                 var animationObject = { width: value };
                 $(this).delay(200).animate(animationObject, 1000, "linear");
-                $(valueElement).delay(1100).animate({ opacity : '1'}, 600, "linear");
+                $(valueElement).delay(1100).animate({ opacity: '1' }, 600, "linear");
             }
             i++;
         });
@@ -129,6 +129,6 @@ $(window).scroll(function () {
 });
 
 //Checks if element is in view based on it's top compared with window's bottom.
-function isInView(element){
+function isInView(element) {
     return element.offset().top <= ($(window).scrollTop() + $(window).height());
 }
