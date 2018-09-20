@@ -100,7 +100,7 @@ $(window).scroll(function () {
     }
 
     //Animations on-scroll.
-    //Happens only on desktop.
+    //Doesn't apply on smartphones/small tablets.
     if(!window.matchMedia('(max-width: 700px)').matches){
 
         if (isInView($("#experience-timeline-wrapper"))) {
