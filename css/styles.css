@@ -78,10 +78,6 @@ textarea{
     margin-bottom: 5px;
 }
 
-.active-menu-icon #main-nav{
-    opacity: 1;
-}
-
 .active-menu-icon .menu-icon-bar:first-child{
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     -moz-transform: rotate(-45deg) translate(-9px, 6px);

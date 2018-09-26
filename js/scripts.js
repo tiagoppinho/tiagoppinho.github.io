@@ -6,6 +6,10 @@ $(function () {
             //gets the href attribute of the element and scrolls to their top.
             scrollTop: $($(this).attr("href")).offset().top
         }, 1200);
+
+        if($("#menu-icon").hasClass("active-menu-icon")){
+            $("#menu-icon").click();
+        }
     });
 
     //Contact form validation.
