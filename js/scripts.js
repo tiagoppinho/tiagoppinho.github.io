@@ -1,4 +1,4 @@
-$(function () {
+$(() => {
     $("a").not("#download-buttons a, .project-buttons").click(function (e) {
         //don't activate the default action of 'a' element.
         e.preventDefault();
@@ -7,23 +7,23 @@ $(function () {
             scrollTop: $($(this).attr("href")).offset().top
         }, 1200);
 
-        if($("#menu-icon").hasClass("active-menu-icon")){
+        if ($("#menu-icon").hasClass("active-menu-icon")) {
             $("#menu-icon").click();
         }
     });
 
     //Contact form validation.
-    $("form#contact-form").submit(function (e) {
+    $("form#contact-form").submit((e) => {
         //Get all input fields except hidden or submit.
-        var inputFields = $("form#contact-form :input").not("[type=hidden], [type=submit]");
-        var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const inputFields = $("form#contact-form :input").not("[type=hidden], [type=submit]");
+        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var error = false;
         var errorType; // 0 - Empty fields, 1 - Invalid email.
 
         //Loop through each input field, apply validation and event listeners.
         inputFields.each(function () {
-            var field = $(this);
-            var fieldValue = field.val().trim();
+            const field = $(this);
+            const fieldValue = field.val().trim();
 
             //Validate
             if (!fieldValue) {
@@ -44,7 +44,7 @@ $(function () {
 
             //Add event listeners.
             $(field).on("change paste keyup", function () {
-                var fieldValue = $(this).val().trim();
+                const fieldValue = $(this).val().trim();
 
                 if (errorType == 0 && fieldValue) {
                     $(this).removeClass("error");
@@ -88,15 +88,15 @@ $(function () {
 })
 
 //Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.
-$(window).scroll(function () {
+$(window).scroll(() => {
     if ($(window).scrollTop() >= $("#about").offset().top - 5) {
-        var windowMiddlePosition = $(window).scrollTop() + ($(window).height() / 2);
+        const windowMiddlePosition = $(window).scrollTop() + ($(window).height() / 2);
 
         $("#side-nav").css("visibility", "visible");
         $("#side-nav ul li a").not("first").each(function () {
-            var section = $($(this).attr("href"));
-            var sectionTop = section.offset().top - 20;
-            var sectionBottom = section.offset().top + section.height();
+            const section = $($(this).attr("href"));
+            const sectionTop = section.offset().top - 20;
+            const sectionBottom = section.offset().top + section.height();
 
             if (sectionTop <= windowMiddlePosition && sectionBottom >= windowMiddlePosition) {
                 //Removes any active anchor before setting up the new one.
@@ -109,8 +109,13 @@ $(window).scroll(function () {
     }
 
     //Animations on-scroll.
-    //Doesn't apply on smartphones/small tablets.
+    //Doesn't apply on smartphones(portrait)/small tabvars.
     if (!window.matchMedia('(max-width: 700px)').matches) {
+        
+        //Checks if element is in view based on it's top compared with window's bottom.
+        const isInView = (element) => {
+            return element.offset().top <= ($(window).scrollTop() + $(window).height());
+        }
 
         if (isInView($("#experience-timeline-wrapper"))) {
             $(".vertical-line").delay(350).animate({ height: '100%' }, 1500, "linear");
@@ -126,18 +131,13 @@ $(window).scroll(function () {
 
         $(".skill-line").each(function () {
             if (isInView($(this))) {
-                var valueElement = $(".skill-value").get(i);
-                var value = valueElement.innerHTML;
-                var animationObject = { width: value };
-                $(this).delay(200).animate(animationObject, 1000, "linear");
+                const valueElement = $(".skill-value").get(i);
+                const value = valueElement.innerHTML;
+
+                $(this).delay(200).animate({ width: value }, 1000, "linear");
                 $(valueElement).delay(1100).animate({ opacity: '1' }, 600, "linear");
             }
             i++;
         });
     }
 });
-
-//Checks if element is in view based on it's top compared with window's bottom.
-function isInView(element) {
-    return element.offset().top <= ($(window).scrollTop() + $(window).height());
-}
