@@ -1,4 +1,4 @@
-$(() => {
+$(function () {
     $("a").not("#download-buttons a, .project-buttons").click(function (e) {
         //don't activate the default action of 'a' element.
         e.preventDefault();
@@ -13,12 +13,12 @@ $(() => {
     });
 
     //Contact form validation.
-    $("form#contact-form").submit((e) => {
+    $("form#contact-form").submit(function (e) {
         //Get all input fields except hidden or submit.
         const inputFields = $("form#contact-form :input").not("[type=hidden], [type=submit]");
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        var error = false;
-        var errorType; // 0 - Empty fields, 1 - Invalid email.
+        let error = false;
+        let errorType; // 0 - Empty fields, 1 - Invalid email.
 
         //Loop through each input field, apply validation and event listeners.
         inputFields.each(function () {
@@ -88,7 +88,7 @@ $(() => {
 })
 
 //Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.
-$(window).scroll(() => {
+$(window).scroll(function () {
     if ($(window).scrollTop() >= $("#about").offset().top - 5) {
         const windowMiddlePosition = $(window).scrollTop() + ($(window).height() / 2);
 
@@ -109,11 +109,11 @@ $(window).scroll(() => {
     }
 
     //Animations on-scroll.
-    //Doesn't apply on smartphones(portrait)/small tabvars.
+    //Doesn't apply on smartphones(portrait)/small tablets.
     if (!window.matchMedia('(max-width: 700px)').matches) {
-        
+
         //Checks if element is in view based on it's top compared with window's bottom.
-        const isInView = (element) => {
+        const isInView = function (element) {
             return element.offset().top <= ($(window).scrollTop() + $(window).height());
         }
 
@@ -127,7 +127,7 @@ $(window).scroll(() => {
             }
         });
 
-        var i = 0;
+        let i = 0;
 
         $(".skill-line").each(function () {
             if (isInView($(this))) {
