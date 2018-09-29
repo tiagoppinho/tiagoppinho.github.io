@@ -13,10 +13,26 @@ html, body{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 textarea{
     resize: none;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li{
+    list-style-type: none;
+}
+
+.nav ul li a{
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    display: block;
 }
 
 #main-nav{
@@ -26,21 +42,14 @@ textarea{
 }
 
 #main-nav ul{
-    margin: 0px;
-    padding: 0px;
     text-align: center;
 }
 
 #main-nav ul li{
-    list-style-type: none;
     display: inline-block;
 }
 
 #main-nav ul li a{
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: 700;
-    display: block;
-    color: white;
     margin-left: 25px;
     -webkit-transition: color 0.6s;
     -moz-transition: color 0.6s;
@@ -108,20 +117,7 @@ textarea{
     visibility: hidden;
 }
 
-#side-nav ul{
-    padding: 0;
-    margin: 0;
-}
-
-#side-nav ul li{
-    list-style-type: none;
-}
-
 #side-nav ul li a{
-    color: white;
-    display: block;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: 700;
     font-size: 85%;
     padding-left: 8px;
     margin-top: 15px;
@@ -161,33 +157,33 @@ section{
     background-image: url(../img/home-background.jpg);
 }
 
+#main-title, .title{
+    font-weight: 800;
+    letter-spacing: 15px;
+}
+
+#main-title, .title, .subtitle{
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
 #main-title{
     width: 50%;
     margin-top: 22%;
-    font-family: 'Poppins', Arial, sans-serif;
     font-size: 80px;
-    font-weight: 800;
-    text-align: center; 
-    letter-spacing: 15px;
     margin-bottom: 25%;
 }
 
 .title{
     width: 100%;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 15px;
     margin-top: 6%;
     font-size: 50px;
-    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .subtitle{
     font-weight: 700;
-    text-align: center;
     letter-spacing: 5px;
     font-size: 24px;
-    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .centered{
@@ -214,16 +210,18 @@ section{
     margin-top: 3%;
 }
 
+#about-text, .more-info{
+    text-align: center;
+}
+
 #about-text{
     width: 65%;
     margin-top: 4%;
-    text-align: center;
     font-size: 18px;
 }
 
 .more-info{
     width: 100%;
-    text-align: center;
     margin-top: 45px;
     margin-bottom: 9%;
 }
@@ -424,6 +422,10 @@ section{
     margin-bottom: 15%;
 }
 
+.project-card, .project-details, .project-skills, .skill{
+    border-radius: 10px;
+}
+
 .project-card{
     height: 325px;
     width: 470px;
@@ -431,7 +433,6 @@ section{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px;
     filter: brightness(90%);
 }
 
@@ -447,7 +448,6 @@ section{
 .project-details{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -459,12 +459,14 @@ section{
     text-align: center;
 }
 
+.project-skills, .project-title, .project-description, .project-buttons{
+    display: block;
+}
+
 .project-skills{
     position: relative;
-    display: block;
     width: calc(100% - 15px);
     height: 23px;
-    border-radius: 10px;
     margin-left: 15px;
     top: 13px;
     font-size: 8pt;
@@ -476,7 +478,6 @@ section{
     float: left;
     height: 20px;
     width: 55px;
-    border-radius: 10px;
     padding-top: 3px;
     margin-right: 10px;
 }
@@ -496,7 +497,6 @@ section{
 .project-skills .skill.sqlite{ background-color: rgba(11, 88, 15, 0.7); }
 
 .project-details .project-title{
-    display: block;
     font-size: 23pt;
     margin-top: 13%;
     margin-bottom: 5%;
@@ -504,7 +504,6 @@ section{
 }
 
 .project-details .project-description{
-    display: block;
     width: 85%;
     height: 90px;
     font-size: 12pt;
@@ -515,7 +514,6 @@ section{
 
 .project-details .project-buttons{
     color: white;
-    display: block;
     width: 180px;
     height: 30px;
     padding-top: 5px;
@@ -552,6 +550,9 @@ section{
     background-position: center;
     width: 400px;
     height: 500px;
+}
+
+#download-picture, #download-buttons{
     border-radius: 10px;
 }
 
@@ -565,7 +566,6 @@ section{
     -ms-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
     opacity: 0;
-    border-radius: 10px;
 }
 
 #download-buttons a{
@@ -574,7 +574,6 @@ section{
     text-align: center;
     width: 230px;
     background-color: rgb(24, 57, 129);
-    color: white;
     padding: 7px 0px;   
     border-radius: 30px;
     position: relative;
