@@ -151,6 +151,9 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
 }
 
 #home{
@@ -201,6 +204,9 @@ section{
     margin-top: 2%;
     background-image: url(../img/picture-of-myself.jpg);
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     border: 1px solid rgb(105, 105, 105);
     border-radius: 50%;
 }
@@ -448,6 +454,9 @@ section{
     float: left;
     background-position: center center;
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(90%);
 }
@@ -563,6 +572,9 @@ section{
     margin-top: 60px;
     background-image: url(../img/cv.png);
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     background-position: center;
     width: 400px;
     height: 500px;
@@ -1086,6 +1098,10 @@ footer span{
         margin-top: 60%;
         margin-bottom: 60%;
         letter-spacing: 10px;
+    }
+
+    section{
+        background-attachment: scroll;
     }
 
     .title{
