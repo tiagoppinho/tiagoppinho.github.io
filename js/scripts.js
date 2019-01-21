@@ -118,7 +118,7 @@ $(window).scroll(function () {
         }
 
         if (isInView($("#experience-timeline-wrapper"))) {
-            $(".vertical-line").delay(350).animate({ height: '100%' }, 1500, "linear");
+            $(".vertical-line").delay(350).animate({ height: '100%' }, 2000, "linear");
         }
 
         $(".experience-content").each(function () {
