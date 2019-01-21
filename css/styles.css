@@ -296,7 +296,7 @@ section{
     font-family: 'Poppins', Arial, sans-serif;
     position: relative;
     top: -75%;
-    width: 46%;
+    width: 45%;
     height: 285px;
     opacity: 0;
 }
@@ -1172,30 +1172,36 @@ footer span{
     
     #experience-content-wrapper{
         margin-bottom: 40%;
+        height: 1225px;
     }
     
     .vertical-line{
-        margin-top: -1160px;
+        height: 103%;
+        margin-top: -1235px;
     }
 
     .circle:not(:last-child){
-        margin-bottom: 240px;
+        margin-bottom: 265px;
     }
 
     .circle:first-child{
-        margin-bottom: 340px;
+        margin-bottom: 350px;
     }
 
     .circle:nth-child(2){
-        margin-bottom: 300px;
+        margin-bottom: 310px;
     }
 
     .experience-content.right{
-        top: 25px;
+        top: 35px;
     }
 
     .experience-content:nth-child(4){
-        top: 55px;
+        top: 75px;
+    }
+
+    .experience-content:last-child{
+        top: 70px;
     }
 
     #projects-wrapper{
