@@ -1,4 +1,3 @@
-/* Default, desktop */
 html, body{
     min-width: 100%;
     margin: 0px;
@@ -39,6 +38,7 @@ textarea{
     width: 100%;
     background-color: transparent;
     margin-top: 25px;
+    font-size: 18px;
 }
 
 #main-nav ul{
@@ -110,7 +110,7 @@ textarea{
 #side-nav{
     position: fixed;
     z-index: 10;
-    top: 25%;
+    top: 30%;
     height: 300px;
     width: 30px;
     margin-left: 20px;
@@ -173,20 +173,20 @@ section{
 #main-title{
     width: 50%;
     margin-top: 22%;
-    font-size: 80px;
+    font-size: 95px;
     margin-bottom: 25%;
 }
 
 .title{
     width: 100%;
     margin-top: 6%;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .subtitle{
     font-weight: 700;
     letter-spacing: 5px;
-    font-size: 24px;
+    font-size: 27px;
 }
 
 .centered{
@@ -221,14 +221,14 @@ section{
 }
 
 #about-text{
-    width: 65%;
-    margin-top: 4%;
-    font-size: 18px;
+    width: 60%;
+    margin-top: 3%;
+    font-size: 19px;
 }
 
 .more-info{
     width: 100%;
-    margin-top: 45px;
+    margin-top: 65px;
     margin-bottom: 9%;
 }
 
@@ -260,7 +260,7 @@ section{
     position: relative;
     width: 76%;
     height: 1180px;
-    top: 120px;
+    top: 150px;
     margin-bottom: 20%;
 }
 
@@ -302,7 +302,7 @@ section{
     font-family: 'Poppins', Arial, sans-serif;
     position: relative;
     top: -75%;
-    width: 45%;
+    width: 40%;
     height: 285px;
     opacity: 0;
 }
@@ -316,6 +316,7 @@ section{
 }
 
 .left{
+    left: 6.2%;
     text-align: right;
 }
 
@@ -360,7 +361,7 @@ section{
 }
 
 #skills-subtitle{
-    width: 60%;
+    width: 50%;
     margin-top: 30px;
 }
 
@@ -368,7 +369,7 @@ section{
     height: 650px;
     width: 70%;
     margin-top: 6%;
-    margin-left: 15.5%;
+    margin-left: 21.5%;
     margin-bottom: 10%;
 }
 
@@ -403,7 +404,7 @@ section{
 
 .skill-content .skill-line-wrapper{
     height: 10px;
-    width: 70%;
+    width: 65%;
     margin-top: 7.5px;
     margin-left: 168px;
 }
@@ -414,19 +415,19 @@ section{
     width: 0%;
 }
 
-.skill-content.sixty .skill-value{ margin-left: calc((70% * 0.6) + 175px); }
+.skill-content.sixty .skill-value{ margin-left: calc((65% * 0.6) + 175px); }
 
-.skill-content.sixty-five .skill-value{ margin-left: calc((70% * 0.65) + 175px); }
+.skill-content.sixty-five .skill-value{ margin-left: calc((65% * 0.65) + 175px); }
 
-.skill-content.seventy .skill-value{ margin-left: calc((70% * 0.7) + 175px); }
+.skill-content.seventy .skill-value{ margin-left: calc((65% * 0.7) + 175px); }
 
-.skill-content.eighty .skill-value{ margin-left: calc((70% * 0.8) + 175px); }
+.skill-content.eighty .skill-value{ margin-left: calc((65% * 0.8) + 175px); }
 
-.skill-content.eighty-five .skill-value{ margin-left: calc((70% * 0.85) + 175px); }
+.skill-content.eighty-five .skill-value{ margin-left: calc((65% * 0.85) + 175px); }
 
-.skill-content.ninety .skill-value{ margin-left: calc((70% * 0.9) + 175px); }
+.skill-content.ninety .skill-value{ margin-left: calc((65% * 0.9) + 175px); }
 
-.skill-content.ninety-five .skill-value{ margin-left: calc((70% * 0.95) + 175px); }
+.skill-content.ninety-five .skill-value{ margin-left: calc((65% * 0.95) + 175px); }
 
 #projects{
     background-image: url(../img/projects-background.jpg);
@@ -438,9 +439,9 @@ section{
 }
 
 #projects-wrapper{
-    width: 955.5px;
+    width: 1030px;
     margin-top: 8%;
-    height: 325px;
+    height: 355px;
     margin-bottom: 15%;
 }
 
@@ -449,8 +450,8 @@ section{
 }
 
 .project-card{
-    height: 325px;
-    width: 470px;
+    height: 355px;
+    width: 500px;
     float: left;
     background-position: center center;
     background-size: cover;
@@ -463,7 +464,7 @@ section{
 
 .project-card:first-child{
     background-image: url(../img/website-project-cover.png);
-    margin-right: 15.5px;
+    margin-right: 30px;
 }
 
 .project-card:last-child{
@@ -565,19 +566,19 @@ section{
 }
 
 #download-title{
-    width: 60%;
+    width: 50%;
 }
 
 #download-picture{
-    margin-top: 60px;
+    margin-top: 110px;
     background-image: url(../img/cv.png);
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    width: 400px;
-    height: 500px;
+    width: 440px;
+    height: 540px;
 }
 
 #download-picture, #download-buttons{
@@ -627,24 +628,24 @@ section{
 }
 
 .separator{
-    width: 55%;
+    width: 45%;
     height: 4px;
     background-color: white;
     border: none;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-bottom: 5%;
 }
 
 #quote-wrapper{
-    width: 55%;
+    width: 45%;
     margin-top: 5%;
     text-align: center;
-    font-size: 150%;
-    margin-bottom: 14%;
+    font-size: 155%;
+    margin-bottom: 11%;
 }
 
 #quote{
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 
 #contact{
@@ -652,7 +653,7 @@ section{
 }
 
 #form-wrapper{
-    width: 55%;
+    width: 45%;
     height: 60%;
     padding: 20px;
     margin-top: 20px;
@@ -736,6 +737,109 @@ footer span{
     font-size: 15px;
     top: 33%;
     color: black;
+}
+
+@media screen and (max-width: 1400px) {
+    #main-nav{
+        font-size: 16.5px;
+    }
+
+    #side-nav{
+        top: 25%;
+    }
+
+    #main-title{
+        font-size: 80px;
+    }
+    
+    .title{
+        font-size: 50px;
+    }
+    
+    .subtitle{
+        font-size: 24px;
+    }
+
+    #about-text{
+        width: 65%;
+        margin-top: 4%;
+        font-size: 18px;
+    }
+
+    #experience-content-wrapper{
+        top: 125px;
+    }
+
+    .experience-content{
+        width: 45%;
+    }
+    
+    .left{
+        left: 1%;
+    }
+
+    #skills-subtitle{
+        width: 60%;
+    }
+    
+    #skills-content-wrapper{
+        margin-left: 17%;
+    }
+
+    .skill-content .skill-line-wrapper{
+        width: 70%;
+    }
+
+    .skill-content.sixty .skill-value{ margin-left: calc((70% * 0.6) + 175px); }
+
+    .skill-content.sixty-five .skill-value{ margin-left: calc((70% * 0.65) + 175px); }
+
+    .skill-content.seventy .skill-value{ margin-left: calc((70% * 0.7) + 175px); }
+
+    .skill-content.eighty .skill-value{ margin-left: calc((70% * 0.8) + 175px); }
+
+    .skill-content.eighty-five .skill-value{ margin-left: calc((70% * 0.85) + 175px); }
+
+    .skill-content.ninety .skill-value{ margin-left: calc((70% * 0.9) + 175px); }
+
+    .skill-content.ninety-five .skill-value{ margin-left: calc((70% * 0.95) + 175px); }
+
+    #projects-wrapper{
+        width: 955.5px;
+        height: 355px;
+    }
+    
+    .project-card{
+        height: 325px;
+        width: 470px;
+    }
+    
+    .project-card:first-child{
+        margin-right: 15.5px;
+    }
+
+    #download-title{
+        width: 60%;
+    }
+
+    #download-picture{
+        margin-top: 100px;
+        width: 410px;
+        height: 510px;
+    }
+
+    .separator{
+        width: 55%;
+    }
+    
+    #quote-wrapper{
+        width: 55%;
+        font-size: 150%;
+    }
+    
+    #form-wrapper{
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 1105px){
@@ -1079,7 +1183,7 @@ footer span{
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
     #main-nav ul li{
         font-size: 11pt;
     }
@@ -1177,7 +1281,7 @@ footer span{
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
     .subtitle{
         font-size: 18px;
     }
