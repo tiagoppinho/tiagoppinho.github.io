@@ -1164,6 +1164,7 @@ footer span{
     }
 
     #download-picture{
+        margin-top: 60px;
         height: 400px;
         width: 300px;
     }
