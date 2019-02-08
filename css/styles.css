@@ -360,6 +360,10 @@ section{
     background-image: url(../img/skills-background.jpg);
 }
 
+#skills .more-info{
+    margin-top: -7.5%;
+}
+
 #skills-subtitle{
     width: 50%;
     margin-top: 30px;
@@ -370,7 +374,7 @@ section{
     width: 70%;
     margin-top: 6%;
     margin-left: 21.5%;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 
 .skill-content{
@@ -420,6 +424,8 @@ section{
 .skill-content.sixty-five .skill-value{ margin-left: calc((65% * 0.65) + 175px); }
 
 .skill-content.seventy .skill-value{ margin-left: calc((65% * 0.7) + 175px); }
+
+.skill-content.seventy-five .skill-value{ margin-left: calc((65% * 0.75) + 175px); }
 
 .skill-content.eighty .skill-value{ margin-left: calc((65% * 0.8) + 175px); }
 
@@ -796,6 +802,8 @@ footer span{
 
     .skill-content.seventy .skill-value{ margin-left: calc((70% * 0.7) + 175px); }
 
+    .skill-content.seventy-five .skill-value{ margin-left: calc((70% * 0.75) + 175px); }
+
     .skill-content.eighty .skill-value{ margin-left: calc((70% * 0.8) + 175px); }
 
     .skill-content.eighty-five .skill-value{ margin-left: calc((70% * 0.85) + 175px); }
@@ -922,6 +930,11 @@ footer span{
         margin-left: auto;
         margin-right: auto;
     }
+    
+    #skills .more-info{
+        margin-top: -11%;
+        margin-bottom: 15%;
+    }
 
     #download-title{
         width: 95%;
@@ -984,6 +997,8 @@ footer span{
     .skill-content.sixty-five .skill-line-wrapper .skill-line{ width: 65%; }
 
     .skill-content.seventy .skill-line-wrapper .skill-line{ width: 70%; }
+
+    .skill-content.seventy-five .skill-line-wrapper .skill-line{ width: 75%; }
     
     .skill-content.eighty .skill-line-wrapper .skill-line{ width: 80%; }
 
@@ -1037,6 +1052,10 @@ footer span{
 
     .more-info{
         margin-bottom: 14%;
+    }
+
+    #skills .more-info{
+        margin-top: -20%;
     }
 
     #experience-content-wrapper{
@@ -1099,6 +1118,8 @@ footer span{
     .skill-content.sixty-five .skill-value{ margin-left: calc((70% * 0.65) + 50px); }
 
     .skill-content.seventy .skill-value{ margin-left: calc((70% * 0.7) + 50px); }
+
+    .skill-content.seventy-five .skill-value{ margin-left: calc((70% * 0.75) + 50px); }
 
     .skill-content.eighty .skill-value{ margin-left: calc((70% * 0.8) + 50px); }
 
@@ -1235,6 +1256,10 @@ footer span{
         font-size: 11pt;
     }
 
+    #skills .more-info{
+        margin-top: -45%;
+        margin-bottom: 20%;
+    }
     
     #skills-content-wrapper{
         margin-top: 12%;
@@ -1323,6 +1348,11 @@ footer span{
 
     .experience-content:last-child{
         top: 70px;
+    }
+
+    #skills .more-info{
+        margin-top: -50%;
+        margin-bottom: 28%;
     }
 
     #projects-wrapper{
