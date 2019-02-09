@@ -1,5 +1,5 @@
 $(function () {
-    $("a").not("#download-buttons a, .project-buttons").click(function (e) {
+    $("nav a, .more-info a").click(function (e) {
         //don't activate the default action of 'a' element.
         e.preventDefault();
         $("html, body").animate({
