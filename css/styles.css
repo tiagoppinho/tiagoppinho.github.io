@@ -663,7 +663,7 @@ section{
     height: 60%;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 input, textarea{
@@ -735,6 +735,35 @@ footer{
     background-color: white;
     text-align: center;
     padding: 2% 0;
+}
+
+.social-bar-wrapper{
+    width: 100%;
+    height: 35px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.social-bar{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 80px;
+}
+
+.social-bar-item{
+    display: block;
+    height: 100%;
+    width: 35px;
+}
+
+.social-bar-item:first-child{
+    float: left;
+    margin-right: 10px;
+}
+
+.social-bar-item:last-child{
+    float: right;
 }
 
 footer span{
