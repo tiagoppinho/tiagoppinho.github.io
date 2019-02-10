@@ -360,10 +360,6 @@ section{
     background-image: url(../img/skills-background.jpg);
 }
 
-#skills .more-info{
-    margin-top: -7.5%;
-}
-
 #skills-subtitle{
     width: 50%;
     margin-top: 30px;
@@ -434,6 +430,10 @@ section{
 .skill-content.ninety .skill-value{ margin-left: calc((65% * 0.9) + 175px); }
 
 .skill-content.ninety-five .skill-value{ margin-left: calc((65% * 0.95) + 175px); }
+
+#skills .more-info{
+    margin-top: -5.5%;
+}
 
 #projects{
     background-image: url(../img/projects-background.jpg);
@@ -844,6 +844,10 @@ footer span a{
     .skill-content.ninety .skill-value{ margin-left: calc((70% * 0.9) + 175px); }
 
     .skill-content.ninety-five .skill-value{ margin-left: calc((70% * 0.95) + 175px); }
+
+    #skills .more-info{
+        margin-top: -7.5%;
+    }
 
     #projects-wrapper{
         width: 955.5px;
