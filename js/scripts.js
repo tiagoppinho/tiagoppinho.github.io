@@ -85,6 +85,9 @@ $(function () {
         $(this).toggleClass("active-menu-icon");
         $("#main-nav").toggleClass("active");
     });
+
+    // Start year - 2018
+    $("#copyright-year").text(`2018-${new Date().getFullYear()}`)
 })
 
 //Shows the side navigation bar or hides it and sets the active anchor, depending on the window top position.

@@ -766,7 +766,7 @@ footer{
     float: right;
 }
 
-footer span{
+footer .footer-info{
     position: relative;
     display: block;
     font-size: 15px;
@@ -774,7 +774,7 @@ footer span{
     color: black;
 }
 
-footer span a{
+footer .footer-info a{
     color: rgb(51, 51, 190);
 }
 
@@ -1183,7 +1183,7 @@ footer span a{
         padding: 5% 0;
     }
 
-    footer span{
+    footer .footer-info{
         font-size: 13px;
     }
 }
